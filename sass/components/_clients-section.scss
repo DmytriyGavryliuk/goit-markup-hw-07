@@ -1,0 +1,50 @@
+/* Client-section */
+
+.clients__box {
+    margin-top: 50px;
+    display: flex;
+    gap: var(--card-set-gap);
+}
+
+.clients__list {
+    flex-basis: calc((100% - 5*var(--card-set-gap))/6);
+}
+
+.clients__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--client-svg-color);
+    background-color: var(--main-light-color);
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: border;
+}
+
+.clients__icon {
+    fill: var(--client-svg-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+}
+
+.clients {
+    padding: 94px 0 94px 0;
+}
+
+.clients__card:hover .clients__icon,
+.clients__card:focus .clients__icon {
+    fill: var(--accent-color);
+}
+
+.clients__card:hover {
+    border: 1px solid var(--accent-color);
+}

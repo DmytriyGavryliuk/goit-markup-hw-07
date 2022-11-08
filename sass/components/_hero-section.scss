@@ -1,0 +1,26 @@
+/* hero */
+
+.hero {
+    padding: 200px 0px;
+    height: 600px;
+}
+
+.hero__overlay {
+    width: 1600px;
+    height: 600px;
+    margin: auto;
+    background-image:
+        linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__title {
+    margin: auto;
+    width: 100%;
+    max-width: 696px;
+    color: var(--main-light-color);
+    text-transform: uppercase;
+}
